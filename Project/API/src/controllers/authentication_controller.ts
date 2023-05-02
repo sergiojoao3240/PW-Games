@@ -42,8 +42,8 @@ export const login = async (req: express.Request, res: express.Response) => {
 export const register = async (req: express.Request, res: express.Response) => {
     try {
 
-        const {email, password, user_id} = req.body;
-        if (!email || !password || !user_id ){
+        const {email, password} = req.body;
+        if (!email || !password){
             return res.sendStatus(400);
         }
 
@@ -52,6 +52,10 @@ export const register = async (req: express.Request, res: express.Response) => {
         if (extisUser){
             return res.sendStatus(400);
         }
+
+        const regex = /\d+/g;
+        const matches = email.match(regex);
+        const user_id = matches ? matches[0] : null;
 
         const salt = random();
         const user = await createUser({
@@ -70,4 +74,3 @@ export const register = async (req: express.Request, res: express.Response) => {
         return res.sendStatus(400);
     }
 }
-// New commit
