@@ -32,7 +32,7 @@ export const getAAuthor = async(req: express.Request, res: express.Response) => 
 export const create_Author= async (req: express.Request, res: express.Response) => {
     try {
 
-        // Verificar se email existe
+        // Verificar se numero existe
         // Criar regex para o numero
 
         const {name, email} = req.body;

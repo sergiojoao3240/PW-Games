@@ -12,6 +12,7 @@ export const AuthorModel = mongoose.model('Author', AuthorSchema);
 export const getAuthors= () => AuthorModel.find();
 export const getAuthorById = (id: String) => AuthorModel.findById({_id: id});
 export const getAUthorByNUmber = (number: String) => AuthorModel.findOne({number});
+export const getAuthorByName = (name: String) => AuthorModel.findOne({name});
 
 // Create
 export const createAuthor = (values: Record<string, any>) => new AuthorModel(values).save().then((author) => author.toObject());
