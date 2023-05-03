@@ -1,0 +1,188 @@
+
+body{
+    background-color: #E5E5E5;
+}
+
+/*---------------------------*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #181818;
+    width: 95%;
+}
+
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0%;
+    position:relative;
+}
+
+img{
+    max-width: 12%;
+}
+
+ul li {
+    position: relative;
+    margin: 30px 50px 0px;
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+ul li a:hover{
+    color: #ffffff ;
+}
+
+ul li a:focus{
+    color: #E50040 ;
+}
+
+@media(max-width: 854px) {
+    ul li{
+        font-size: 12px;
+        margin: 30px 20px 0px;
+    }
+}
+
+@media(max-width: 500px) {
+    ul li{
+        font-size: 12px;
+        margin: 30px 10px 0px;
+    }
+}
+
+/* --------------------------------------*/
+
+.container{
+    padding:0%;
+    width: 100%;
+    padding-bottom: 0%;
+}
+
+.lateral{
+    background-color: #ffffff;
+    float:left;
+    height:125vh;
+    position:relative;
+}
+
+.lateral p{
+    transform: rotate(-90deg);
+    margin-top: 200px;
+}
+
+a.redes{
+    color: #000000;
+    margin-top: 200px;
+}
+
+p.mdejd{
+    margin-top: 50px;
+    color: #E50040;
+}
+
+/*----------------- lateral bar ----------------------*/
+
+.content{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+
+h1 a{
+    margin-top: 10%;
+    color:#000000;
+
+}
+
+h1 a:hover{
+    color:#E50040;
+}
+
+h1, h4{
+    display:flex;
+    justify-content: center;
+}
+
+h4{
+    margin-top: 2%;
+}
+
+@media(max-width: 1000px) {
+    iframe{
+        width: 500px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 600px) {
+    iframe{
+        width: 300px;
+        height: 150px;
+    }
+}
+
+/*-----------------------content ------------------*/
+
+
+.box{
+    background-color: #dadada;
+    width: 95%;
+    padding:2%;
+    margin-bottom:0%;
+}
+
+h2{
+    margin-left: 5%;
+}
+
+.descriptionZ{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descriptionZ p{
+    padding: 2%;
+}
+
+.cover{
+    margin-right: 5%;
+}
+
+
+/* Back to the top Button*/
+
+.box, .btn{
+    float:bottom;
+}
+
+
+.btn{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#myBtn {
+
+    border: none;
+    background-color: #E50040;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+  }

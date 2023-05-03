@@ -1,0 +1,56 @@
+body{
+    background-color: #181818;
+}
+
+.container{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    margin-top: 50px;
+}
+
+.fields{
+    background-color: #d9d9d92d;
+    width: 400px;
+    height: 450px;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+.inputs, .buttons{
+    margin-top: 35px;
+    display: grid;
+    justify-content: center;
+}
+
+
+.email, .pass, .ConfPass{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.create, .cancel{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.create{
+    background-color: #E50040;
+    color: white;
+    font-weight: bold;
+}
+
+.cancel{
+    background-color: #A7A7A7;
+    font-weight: bold;
+}
