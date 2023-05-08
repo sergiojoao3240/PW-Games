@@ -43,10 +43,19 @@
 }
 
 .sidebar {
-    position: relative;
+    position: fixed;
     bottom: 0;
+    top: 60px;
     left: 0;
     width: 70px;
+    z-index: -25
+}
+
+.content-texto{
+    margin-left: 75px;
+    margin-right: 75px;
+    display: grid;
+    justify-content: center;
 }
 
 a.list-group-item{
@@ -55,4 +64,17 @@ a.list-group-item{
     border: none;
 }
 
+h1{
+    margin-top: 50px;
+}
+h1 a u{
+    color:#181818;
+}
+
+
+iframe{
+    max-width: 100% !important;
+    min-height: 200px;
+
+}
 
