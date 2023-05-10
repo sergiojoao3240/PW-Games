@@ -73,6 +73,10 @@ a.list-group-item{
     border: none;
 }
 
+a.list-group-item:nth-child(1) > span:nth-child(1){
+    color: #E50040;
+}
+
 h1{
     margin-top: 50px;
 }
