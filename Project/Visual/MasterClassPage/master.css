@@ -86,14 +86,46 @@ h1{
 
 
 .box{
-    background-color: #cf4b4bfb;
-    margin-top: 80px;
+    background-color: #dbdbdbfb;
+    margin-top:50px;
+    position:absolute;
     margin-left: 15%;
-    margin-right: 15%;
-    padding: 10%;
+    border-radius: 10px;
+    width: 68%;
+    height: auto;
 }
 
 .image, .content{
     float:left;
 }
+
+.image{
+    max-width: 30%;
+    height: auto;
+}
+
+.content{
+    margin-left: 15px;
+    padding: 5px;
+    max-width: 70%;
+    height: auto;
+}
+
+.desc{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.ano, .data{
+    float:left;
+    position: relative;
+    bottom: -60px;
+    font-size: 20px;
+}
+
+.data{
+    margin-left: 70%;
+}
+
+
 
