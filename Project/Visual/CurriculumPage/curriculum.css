@@ -87,7 +87,7 @@ h1{
 
 .box{
     background-color: #dbdbdbfb;
-    margin-top:50px;
+    margin-top:10px;
     position:absolute;
     margin-left: 15%;
     border-radius: 10px;
@@ -95,21 +95,39 @@ h1{
     height: auto;
 }
 
+.titles{
+    margin-top: 4%;
+    margin-left: 15%;
+    width: 68%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
 
 .content{
     margin-left: 15px;
+    margin-top: 5px;
     padding: 5px;
-    max-width: 70%;
+    max-width:100%;
     height: auto;
 }
 
-.semester, .name{
-    float:left;
-    position: relative;
-    margin-right: 240px;
+h4.semester{
+    margin-left: 4%;
+    max-width: 20%;
 }
 
+.year, .name{
+    display: flex;
+    justify-content: center;
+}
 
-
+h4.ects{
+    display: flex;
+    justify-content: end;
+    max-width: 20%;
+    margin-right: 5%;
+}
 
 
