@@ -38,7 +38,7 @@
         <div class="container-fluid">
             <!--Main Navigation-->
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-1">
                     <nav id="sidebarMenu" class="d-lg-block sidebar bg-white">
                         <div class="position-sticky">
                             <div class="list-group list-group-flush">
@@ -54,63 +54,51 @@
                             </div>
                         </div>
                     </nav>
-                    <div class="container1">
-                        <section class="carousel" aria-label="Gallery">
-                            <ol class="carousel__viewport">
-                              <li id="carousel__slide1"
-                                  tabindex="0"
-                                  class="carousel__slide">
-                                <div class="carousel__snapper">
-                                  <a href="#carousel__slide4"
-                                     class="carousel__prev">Go to last slide</a>
-                                  <a href="#carousel__slide2"
-                                     class="carousel__next">Go to next slide</a>
-                                     <img class="slide" src="slide1.jpg">
-                                </div>
-                              </li>
-                              <li id="carousel__slide2"
-                                  tabindex="0"
-                                  class="carousel__slide">
-                                <div class="carousel__snapper">
-                                    <img class="slide" src="slide1.jpg">
-                                </div>
-                                <a href="#carousel__slide1"
-                                   class="carousel__prev">Go to previous slide</a>
-                                <a href="#carousel__slide3"
-                                   class="carousel__next">Go to next slide</a>
-                              </li>
-                              <li id="carousel__slide3"
-                                  tabindex="0"
-                                  class="carousel__slide">
-                                <div class="carousel__snapper">
-                                    <img class="slide" src="slide1.jpg">
-                                </div>
-                                <a href="#carousel__slide2"
-                                   class="carousel__prev">Go to previous slide</a>
-                                <a href="#carousel__slide4"
-                                   class="carousel__next">Go to next slide</a>
-                              </li>
-                              <li id="carousel__slide4"
-                                  tabindex="0"
-                                  class="carousel__slide">
-                                <div class="carousel__snapper">
-                                    <img class="slide" src="slide1.jpg">
-                                </div>
-                                <a href="#carousel__slide3"
-                                   class="carousel__prev">Go to previous slide</a>
-                                <a href="#carousel__slide1"
-                                   class="carousel__next">Go to first slide</a>
-                              </li>
-                            </ol>
-                          </section>
+                </div>
 
-                          <p>Ola</p>
+
+                <div class="col-sm-11">
+                    <div class="slider">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <div class="slide first">
+                                <img src="slide1.jpg">
+                            </div>
+                            <div class="slide second">
+                                <img src="slide2.jpg">
+                            </div>
+                            <div class="slide third">
+                                <img src="slide3.jpg">
+                            </div>
+                            <div class="slide fourth">
+                                <img src="slide4.jpg">
+                            </div>
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                            </div>
+                        </div>
+                        <div class="manual-navigation">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
                     </div>
                 </div>
-                </div>
             </div>
+
+
+
+
         </div>
 
+        <script src="script.js"></script>
     </body>
 </html>
 
