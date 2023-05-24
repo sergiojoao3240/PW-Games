@@ -1,0 +1,119 @@
+
+.navbar{
+    background-color: #181818;
+    width: 95%;
+    padding: 0;
+}
+
+.navbar-toggler {
+    outline: none;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.navbar-toggler img {
+    width: 35px;
+}
+
+
+
+.navbar-brand img{
+    width: 45%;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 22px;
+    margin-right: 50px;
+}
+
+.nav-link:hover{
+    color: #ffffff ;
+}
+
+.nav-link:focus{
+    color: #E50040 ;
+}
+
+  /* Sidebar */
+
+.container{
+    margin: 0%;
+}
+
+.sidebar {
+    position: relative;
+    bottom: 0;
+    top: 80px;
+    left: 0;
+    width: 70px;
+}
+
+.sidebar, content-texto{
+    float:left;
+}
+
+.content-texto{
+    margin-left: 75px;
+    margin-right: 75px;
+    display: grid;
+    justify-content: center;
+}
+
+a.list-group-item{
+    margin-top: 50px;
+    transform: rotate(-90deg);
+    border: none;
+}
+
+a.list-group-item:nth-child(1) > span:nth-child(1){
+    color: #E50040;
+}
+
+
+h1{
+    margin-top: 50px;
+    color:#181818;
+    display: grid;
+    justify-content: center;
+}
+
+
+.search{
+    margin-top: 2%;
+    width: 90%;
+
+}
+
+.game{
+    display: grid;
+    justify-content:center;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.txt, .location{
+    float:left;
+    margin-left: 5px;
+    cursor:pointer;
+}
+
+.txt{
+    font-size: 18px;
+    color: #E50040;
+}
+
+.g{
+    width: 90%;
+}
+
+a.title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0%;
+    color: black;
+}
+
+.others{
+    font-size: 16px;
+}
