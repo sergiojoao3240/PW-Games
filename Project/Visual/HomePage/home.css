@@ -179,3 +179,59 @@ a.list-group-item:nth-child(1) > span:nth-child(1){
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background-color: #ffffff;
 }
+
+
+.red{
+  background-color: #E50040;
+}
+
+.news{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+
+.games, .covers{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.text{
+  padding: 3%;
+  background-color: beige;
+}
+
+.description{
+  margin-top: 5%;
+  font-size: 18px;
+}
+
+.image{
+  background-color: #E50040;
+  display: flex;
+  justify-content:center;
+  padding: 1%;
+}
+
+.g{
+  margin-top: 5%;
+}
+
+.c{
+  margin-top: 3%;;
+}
+
+.authors{
+  margin-top: 2%;
+  margin-bottom: 20%;
+  font-size: 18px;
+}
+
+.more{
+  color: #E50040;
+}
+
+
