@@ -235,3 +235,23 @@ a.list-group-item:nth-child(1) > span:nth-child(1){
 }
 
 
+.covers, .button{
+  float:left;
+}
+
+.button{
+  width:10%;
+  transform: rotate(-90deg);
+  margin-top:22%;
+}
+
+#myBtn {
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  color: #E50040;
+}
+
