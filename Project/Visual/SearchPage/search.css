@@ -169,3 +169,54 @@ a.title{
     border: transparent;
     background-color: #ffffff;
   }
+
+  .newGame{
+    color: #E50040;
+    background-color: transparent;
+    border: transparent;
+    font-size: 18px;
+    margin-left: 30%;
+  }
+
+  .overlayAdd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Ocultar por padrão */
+  }
+  .overlayAdd-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    display: grid;
+  }
+
+  #AddSubmit{
+    background-color: #E50040;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 350px;
+    padding: 5px;
+  }
+
+  #GameSubmit{
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #E50040;
+    color: #ffffff;
+    padding: 5px;
+  }
+

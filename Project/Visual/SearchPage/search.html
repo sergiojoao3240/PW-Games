@@ -58,13 +58,29 @@
                 <div class="col-sm-11">
                     <h1>All Games</h1>
                     <div class="search row">
-                        <div class="col-md-10">
+                        <div class="col-md-3">
+                            <button class="newGame" id="AddBtn">
+                                Add new Game
+                            </button>
                         </div>
+                        <div class="col-md-7"></div>
                         <div class="col-md-2">
                             <button id="searchBtn">
                                 <p class="txt">Filter by game</p>
                                 <img class="location" src="location-removebg-preview.png">
                             </button>
+                        </div>
+                    </div>
+
+                    <div class="overlayAdd" id="overlayAdd">
+                        <div class="overlayAdd-content">
+                          <input type="text" id="name" placeholder="Nome">
+                          <input type="text" id="video" placeholder="Video link">
+                          <input type="text" id="link" placeholder="Link">
+                          <input type="text" id="description" placeholder="Descrição">
+                          <input type="text" id="authors" placeholder="Autores">
+                          <input type="text" id="date" placeholder="Data">
+                          <button id="GameSubmit">Adicionar</button>
                         </div>
                     </div>
 

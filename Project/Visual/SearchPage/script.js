@@ -49,3 +49,26 @@ function searchElements() {
 // Adicionar manipuladores de eventos aos botões
 document.getElementById("searchBtn").addEventListener("click", showOverlay);
 document.getElementById("searchSubmit").addEventListener("click", searchElements);
+
+
+
+
+
+
+ // Função para exibir o overlay de adicionar jogo
+ function showOverlay() {
+  document.getElementById("overlayAdd").style.display = "block";
+}
+
+// Função para ocultar o overlay de pesquisa
+function hideOverlay() {
+  document.getElementById("overlayAdd").style.display = "none";
+}
+
+function SaveGame(){
+  hideOverlay()
+}
+
+// Adicionar manipuladores de eventos aos botões
+document.getElementById("AddBtn").addEventListener("click", showOverlay);
+document.getElementById("GameSubmit").addEventListener("click", SaveGame);
