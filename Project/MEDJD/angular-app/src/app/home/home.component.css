@@ -1,0 +1,212 @@
+
+.container{
+    margin: 0%;
+}
+
+.sidebar {
+    position: relative;
+    bottom: 0;
+    top: 80px;
+    left: 0;
+    width: 70px;
+}
+
+.sidebar, content-texto{
+    float:left;
+}
+
+.content-texto{
+    margin-left: 75px;
+    margin-right: 75px;
+    display: grid;
+    justify-content: center;
+}
+
+a.list-group-item{
+    margin-top: 50px;
+    transform: rotate(-90deg);
+    border: none;
+}
+
+a.list-group-item:nth-child(1) > span:nth-child(1){
+    color: #E50040;
+}
+
+.slider{
+    overflow: hidden;
+    margin-left: -70px;
+  }
+  
+  .slides{
+    display:flex;
+    width: 400%;
+    height: auto;
+  }
+  
+  .slides input{
+    display:none;
+  }
+  
+  .slide{
+    width: 25%;
+    position:relative;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 95%;
+    height: 500px;
+  }
+  
+  .manual-navigation{
+    position:absolute;
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    margin-top: -40px;
+  }
+  
+  .manual-btn{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background-color: #ffffff;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -25%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -50%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -75%;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #E50040;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .navigation-auto{
+    position: absolute;
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #ffffff;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #ffffff;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #ffffff;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #ffffff;
+  }
+  
+  
+  .red{
+    background-color: #E50040;
+  }
+  
+  .news{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  
+  }
+  
+  
+  .games, .covers{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+  
+  .text{
+    padding: 3%;
+    background-color: beige;
+  }
+  
+  .description{
+    margin-top: 5%;
+    font-size: 18px;
+  }
+  
+  .image{
+    background-color: #E50040;
+    display: flex;
+    justify-content:center;
+    padding: 1%;
+  }
+  
+  .g{
+    margin-top: 5%;
+  }
+  
+  .c{
+    margin-top: 3%;;
+  }
+  
+  .authors{
+    margin-top: 2%;
+    margin-bottom: 20%;
+    font-size: 18px;
+  }
+  
+  .more{
+    color: #E50040;
+  }
+  
+  
+  .covers, .button{
+    float:left;
+  }
+  
+  .button{
+    width:10%;
+    transform: rotate(-90deg);
+    margin-top:22%;
+  }
+  
+  #myBtn {
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    color: #E50040;
+  }
+  
+  

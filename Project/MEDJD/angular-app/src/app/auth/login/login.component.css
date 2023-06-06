@@ -3,6 +3,9 @@
     display:grid;
     justify-content: center;
     align-items: center;
+    background-color: #181818;
+    padding: 2%;
+    margin: 0px, 0px;
 }
 
 .image{
