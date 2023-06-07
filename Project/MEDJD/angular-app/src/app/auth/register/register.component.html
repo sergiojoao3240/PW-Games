@@ -2,17 +2,21 @@
     <div class="image">
         <img src="../assets/logo.png">
     </div>
-    <form [formGroup]="loginForm" (submit)="login()">
+    <form [formGroup]="registerForm" (submit)="register()">
         <div class="fields">
             <div class="inputs">
                 <input class="form-control email" placeholder="E-mail" formControlName="email">
                 <input class="form-control pass" placeholder="Password" formControlName="password" type="password">
+                <input class="form-control ConfPass" placeholder="Confirm Password" formControlName="cpass" type="password">
             </div>
             <div class="buttons">
-                <button type="submit" [disabled]="loginForm.invalid" class="login">Login</button>
-                <button class="register" routerLink="/register">Create Account</button>
+                <a>
+                    <button class="create" type="submit" [disabled]="registerForm.invalid">Create</button>
+                </a>
+                <a routerLink="/register">
+                    <button class="cancel">Cancel</button>
+                </a>
             </div>
         </div>
     </form>
 </div>
-

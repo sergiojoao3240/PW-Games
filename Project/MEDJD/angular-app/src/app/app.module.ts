@@ -11,8 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginServiceService } from './auth/login-service.service';
 import { AboutComponent } from './about/about.component';
-import { CurriculumComponent } from './curriculum/curriculum.component';
-import { SubjectComponent } from './curriculum/subject/subject.component';
+import { RegisterComponent } from './auth/register/register.component';
+
 
 @NgModule({
   declarations: [
@@ -21,8 +21,8 @@ import { SubjectComponent } from './curriculum/subject/subject.component';
     HomeComponent,
     HeaderComponent,
     AboutComponent,
-    CurriculumComponent,
-    SubjectComponent
+    RegisterComponent,
+
   ],
   imports: [
     BrowserModule,
