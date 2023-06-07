@@ -37,7 +37,7 @@ export const isAuthenticated = async(req: express.Request, res: express.Response
         const existUser = await getUserBySessionToken(sessionToken);
 
         if(!existUser){
-            return res.sendStatus(403);
+            return res.sendStatus(404);
         }
 
         merge(req, { identity: existUser });

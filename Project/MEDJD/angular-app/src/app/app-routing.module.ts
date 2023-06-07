@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AuthGuard } from './auth/auth.guard';
 import { RegisterComponent } from './auth/register/register.component';
+import { CurriculumComponent } from './curriculum/curriculum.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
   { path: 'about', component: AboutComponent, canActivate: [AuthGuard]},
   { path: 'register', component: RegisterComponent},
+  { path: 'curriculum', component: CurriculumComponent, canActivate:[AuthGuard]},
 ];
 
 @NgModule({

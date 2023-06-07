@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <!--Main Navigation-->
+    <div class="row">
+        <div class="col-sm-12">
+            <nav id="sidebarMenu" class="d-lg-block sidebar bg-white">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush">
+                        <a routerLink="/home" class="list-group-item list-group-item-action py-4">
+                            <span>MEDJD</span>
+                        </a>
+                        <a href="https://www.facebook.com/" class="list-group-item list-group-item-action py-4">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/" class="list-group-item list-group-item-action py-4">
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="content-texto">
+                <h1> MEDJD Curriculum</h1>
+            </div>
+            <div class="titles row" *ngIf="responseSubjects">
+                <h4 class="semester col">Year - Semester</h4>
+                <h4 class="year col">Name</h4>
+                <h4 class="ects col">ECTS</h4>
+            </div>
+            <div class="box">
+                <div class="content row" *ngFor="let subject of responseSubjects">
+                    <h4 class="semester col">{{subject.year}} - {{subject.semester}}</h4>
+                    <h4 class="name col">{{subject.name}}</h4>
+                    <h4 class="ects col">{{subject.ects}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

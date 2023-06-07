@@ -18,8 +18,11 @@ export class LoginServiceService {
     return this.http.post<any>(`${baseUrl}auth/login`, { email, password }).pipe(
       tap((response: any) => {
         console.log('Login bem-sucedido');
-        localStorage.setItem('token', response.authentication.sessionToken);
-        // Armazenar o sessionToken em localStorage, sessionStorage ou outro mecanismo de armazenamento de sua escolha
+
+
+        const sessionToken = response.authentication.sessionToken;
+        localStorage.setItem('token', sessionToken);
+
         window.location.href = '/home';
       }),
       catchError((error: any) => {
