@@ -29,7 +29,7 @@ export const login = async (req: express.Request, res: express.Response) => {
 
         await user.save();
 
-        res.cookie('SERGIO-AUTH', user.authentication.sessionToken, { domain: 'localhost', path: '/', httpOnly: true, secure:true});
+        res.cookie('SERGIO-AUTH', user.authentication.sessionToken, { domain: 'localhost', path: '/', httpOnly: true});
 
         return res.status(200).json(user).end();
 

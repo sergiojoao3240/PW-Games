@@ -7,6 +7,25 @@ export const getAllCurriculum = async(req: express.Request, res: express.Respons
 
         const curriculums = await getCurriculum();
 
+        // Ordenar as cadeiras por ano e depois por semestre
+        curriculums.sort((a, b) => {
+            const yearA = parseInt(a.year, 10);
+            const yearB = parseInt(b.year, 10);
+
+            if (yearA !== yearB) {
+            return yearA - yearB;
+            } else {
+            const semesterA = parseInt(a.semester, 10);
+            const semesterB = parseInt(b.semester, 10);
+            return semesterA - semesterB;
+            }
+        });
+
+        curriculums.forEach((curriculum) => {
+            curriculum.year = curriculum.year.toString();
+            curriculum.semester = curriculum.semester.toString();
+        });
+
         return res.status(200).json(curriculums);
 
     } catch (error){

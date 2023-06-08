@@ -19,7 +19,6 @@ export class LoginServiceService {
       tap((response: any) => {
         console.log('Login bem-sucedido');
 
-
         const sessionToken = response.authentication.sessionToken;
         localStorage.setItem('token', sessionToken);
 

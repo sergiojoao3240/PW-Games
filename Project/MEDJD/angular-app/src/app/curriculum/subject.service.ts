@@ -15,14 +15,8 @@ export class SubjectService {
 
 
   getSubjects(): Observable<ResponseSubjects> {
-    const token = localStorage.getItem('token');
 
-    console.log(token)
-
-    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-
-    return this.http.get<ResponseSubjects>(`${baseUrl}curriculum`, { headers });
-
+    return this.http.get<ResponseSubjects>(`${baseUrl}curriculum`);
   }
 
 }

@@ -10,4 +10,6 @@ export default(router: express.Router) =>{
     router.get('/curriculum/curr/:id', isAuthenticated, getACurriculum);
     router.delete('/curriculum/:id', isAuthenticated, deleteCurriculum);
     router.patch('/curriculum/:id', isAuthenticated, updateCurriculum);
+
+    // Alguns estão sem verificação de autenticação para ser possivel usar no frontend
 };

@@ -9,4 +9,5 @@ export default(router: express.Router) =>{
     router.get('/authors/author/:id', isAuthenticated, getAAuthor);
     router.delete('/authors/:id', isAuthenticated, deleteAuthor);
     router.patch('/authors/:id', isAuthenticated, updateAuthor);
+
 };
