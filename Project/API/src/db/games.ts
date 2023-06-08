@@ -6,7 +6,8 @@ const GameSchema = new mongoose.Schema({
     description: {type: String, required: true},
     link: {type: String, required: true},
     video_dir: {type: String, required: true},
-    date: {type: String, required: true}
+    date: {type: String, required: true},
+    image_dir: {type: String, required: true}
 });
 
 export const GameModel = mongoose.model('Games', GameSchema);

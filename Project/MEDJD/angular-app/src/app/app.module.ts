@@ -15,6 +15,8 @@ import { RegisterComponent } from './auth/register/register.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { MasterclassComponent } from './masterclass/masterclass.component';
 import { ClassComponent } from './masterclass/class/class.component';
+import { SearchComponent } from './search/search.component';
+import { GameComponent } from './search/game/game.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { ClassComponent } from './masterclass/class/class.component';
     CurriculumComponent,
     MasterclassComponent,
     ClassComponent,
+    SearchComponent,
+    GameComponent,
 
   ],
   imports: [

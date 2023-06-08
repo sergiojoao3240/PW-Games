@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <!--Main Navigation-->
+    <div class="row">
+        <div class="col-sm-1">
+            <nav id="sidebarMenu" class="d-lg-block sidebar bg-white">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush">
+                        <a routerLink="/home" class="list-group-item list-group-item-action py-4">
+                            <span>MEDJD</span>
+                        </a>
+                        <a href="https://www.facebook.com/" class="list-group-item list-group-item-action py-4">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/" class="list-group-item list-group-item-action py-4">
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-sm-11 top" *ngIf="request">
+            <h1><a href="#"><u>{{request.name}}</u></a></h1>
+            <h4>By {{request.authors}}</h4>
+            <div class="max1000">
+                <div class="iframe-content">
+                    <iframe width="550" height="305" src="{{request.video_dir}}"  allowfullscreen></iframe>
+                </div>
+            </div>
+            <h4 class="date">Launched on {{request.date}}</h4>
+        </div>
+        <div class="box">
+            <h2>Description</h2>
+            <div class="descriptionZ">
+                <p>{{request.description}}</p>
+                <img src="{{request.image_dir}}" class="cover">
+            </div>
+        </div>
+
+        <div class="button">
+            <p (click)="topFunction()" id="myBtn" title="Go to top">Back to the Top</p>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <!--Main Navigation-->
+    <div class="row">
+        <div class="col-sm-1">
+            <nav id="sidebarMenu" class="d-lg-block sidebar bg-white">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush">
+                        <a routerLink="/home" class="list-group-item list-group-item-action py-4">
+                            <span>MEDJD</span>
+                        </a>
+                        <a href="https://www.facebook.com/" class="list-group-item list-group-item-action py-4">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/" class="list-group-item list-group-item-action py-4">
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-sm-11">
+            <h1>All Games</h1>
+            <div class="search row">
+                <div class="col-md-3">
+                    <button class="newGame" id="AddBtn">
+                        Add new Game
+                    </button>
+                </div>
+                <div class="col-md-7"></div>
+                <div class="col-md-2">
+                    <button id="searchBtn">
+                        <p class="txt">Filter by game</p>
+                        <img class="location" src="../assets/location-removebg-preview.png">
+                    </button>
+                </div>
+            </div>
+
+            <div class="overlayAdd" id="overlayAdd">
+                <div class="overlayAdd-content">
+                  <input type="text" id="name" placeholder="Nome">
+                  <input type="text" id="video" placeholder="Video link">
+                  <input type="text" id="link" placeholder="Link">
+                  <input type="text" id="description" placeholder="Descrição">
+                  <input type="text" id="authors" placeholder="Autores">
+                  <input type="text" id="date" placeholder="Data">
+                  <button id="GameSubmit">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div class="overlay-content">
+                  <input type="text" id="searchInput" placeholder="Digite o nome">
+                  <button id="searchSubmit">Pesquisar</button>
+                </div>
+            </div>
+
+            <div class="g row">
+                <div class="col-md-3 game-fluid"  *ngFor="let game of responseGames">
+                    <img src="{{game.image_dir}}">
+                    <a class="title" routerLink="/games/game/{{game._id}}">{{game.name}}</a>
+                    <p class="others"><b>By {{game.authors}}, {{game.date | date:'yyyy'}}</b></p>
+                </div>
+            </div>
+
+            <div class="button">
+                <p (click)="topFunction()" id="myBtn" title="Go to top">Back to the Top</p>
+            </div>
+
+
+        </div>
+    </div>
+</div>

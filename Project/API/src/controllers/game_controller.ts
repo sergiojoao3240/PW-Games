@@ -33,8 +33,8 @@ export const getAGame= async(req: express.Request, res: express.Response) => {
 export const create_Game= async (req: express.Request, res: express.Response) => {
     try {
 
-        const {name, authors, description, link, video_dir, date} = req.body;
-        if (!name || !authors || !description || !link || !video_dir || !date){
+        const {name, authors, description, link, video_dir, date, image_dir} = req.body;
+        if (!name || !authors || !description || !link || !video_dir || !date || !image_dir){
             return res.sendStatus(400);
         }
 
@@ -56,7 +56,8 @@ export const create_Game= async (req: express.Request, res: express.Response) =>
             description,
             link,
             video_dir,
-            date
+            date,
+            image_dir
         });
 
         return res.status(200).json(game).end();
@@ -85,9 +86,9 @@ export const updateGame = async(req: express.Request, res: express.Response) => 
     try{
 
         const { id } = req.params;
-        const { description, link, video_dir}= req.body;
+        const { description, link, video_dir, image_dir}= req.body;
 
-        if(!description || !link || !video_dir){
+        if(!description || !link || !video_dir || !image_dir){
             return res.sendStatus(400);
         }
 
@@ -96,6 +97,7 @@ export const updateGame = async(req: express.Request, res: express.Response) => 
         game.description = description;
         game.link = link;
         game.video_dir = video_dir;
+        game.image_dir = image_dir;
         await game.save();
 
         return res.status(200).json(game).end();

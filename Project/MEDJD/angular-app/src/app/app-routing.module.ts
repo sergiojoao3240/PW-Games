@@ -8,6 +8,8 @@ import { RegisterComponent } from './auth/register/register.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { MasterclassComponent } from './masterclass/masterclass.component';
 import { ClassComponent } from './masterclass/class/class.component';
+import { SearchComponent } from './search/search.component';
+import { GameComponent } from './search/game/game.component';
 
 
 const routes: Routes = [
@@ -19,6 +21,8 @@ const routes: Routes = [
   { path: 'curriculum', component: CurriculumComponent, canActivate:[AuthGuard]},
   { path: 'masterClass', component: MasterclassComponent, canActivate:[AuthGuard]},
   { path: 'masterClass/:_id', component: ClassComponent, canActivate:[AuthGuard]},
+  { path: 'games', component: SearchComponent, canActivate:[AuthGuard]},
+  { path: 'games/game/:_id', component: GameComponent, canActivate:[AuthGuard]},
 ];
 
 @NgModule({

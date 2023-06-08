@@ -17,7 +17,6 @@ export class ClassComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('_id');
-    
     this.masterService.getAMaster(this.id!).subscribe(res => {
       this.request = {
         _id: `${res._id}`,
