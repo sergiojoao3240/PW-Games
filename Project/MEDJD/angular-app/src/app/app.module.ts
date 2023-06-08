@@ -13,6 +13,7 @@ import { LoginServiceService } from './auth/login-service.service';
 import { AboutComponent } from './about/about.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
+import { MasterclassComponent } from './masterclass/masterclass.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CurriculumComponent } from './curriculum/curriculum.component';
     AboutComponent,
     RegisterComponent,
     CurriculumComponent,
+    MasterclassComponent,
 
   ],
   imports: [

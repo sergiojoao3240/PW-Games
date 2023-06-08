@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <!--Main Navigation-->
+    <div class="row">
+        <div class="col-sm-12">
+            <nav id="sidebarMenu" class="d-lg-block sidebar bg-white">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush">
+                        <a routerLink="/home" class="list-group-item list-group-item-action py-4">
+                            <span>MEDJD</span>
+                        </a>
+                        <a href="https://www.facebook.com/" class="list-group-item list-group-item-action py-4">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/" class="list-group-item list-group-item-action py-4">
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="content-texto">
+                <h1>Master Classes</h1>
+            </div>
+            <div class="box" >
+                <div class="content" *ngFor="let master of responseMasterClasses">
+                    <div class="image">
+                        <img src="{{master.image_dir}}" class="img-fluid">
+                    </div>
+                    <div class="content-fluid">
+                        <h4 class="title"><a href="/Project/Visual/ClassPage/class.html">{{master.title}}</a></h4>
+                        <p class="desc">{{master.description}}</p>
+                        <div class="linha">
+                            <p class="ano"><b>Year: {{master.year}}</b></p>
+                            <p class="data">{{master.date}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
