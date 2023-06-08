@@ -16,7 +16,7 @@ export const MasterModel = mongoose.model('Master_Class', MasterSchema);
 
 // Get
 export const getMasters= () => MasterModel.find();
-export const getMasterById = (id: String) => MasterModel.findById({_id: id});
+export const getMasterById = (_id: String) => MasterModel.findById({_id: _id});
 export const getMasterByTitle = (title: String) => MasterModel.findOne({title});
 
 // Create

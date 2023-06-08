@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ResponseMasterClasses } from '../Models/masterclass.model';
+import { ResponseMasterClass, ResponseMasterClasses } from '../Models/masterclass.model';
 import { baseUrl } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 
@@ -13,7 +13,12 @@ export class MasterClassService {
 
 
   getMasters(): Observable<ResponseMasterClasses> {
-
     return this.http.get<ResponseMasterClasses>(`${baseUrl}masterClass`);
+  }
+
+
+  getAMaster(_id: string): Observable<ResponseMasterClass> {
+    const _url_m = `${baseUrl}masterClass/${_id}`;
+    return this.http.get<ResponseMasterClass>(_url_m);
   }
 }

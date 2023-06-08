@@ -7,6 +7,7 @@ import { AuthGuard } from './auth/auth.guard';
 import { RegisterComponent } from './auth/register/register.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { MasterclassComponent } from './masterclass/masterclass.component';
+import { ClassComponent } from './masterclass/class/class.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'curriculum', component: CurriculumComponent, canActivate:[AuthGuard]},
   { path: 'masterClass', component: MasterclassComponent, canActivate:[AuthGuard]},
+  { path: 'masterClass/:_id', component: ClassComponent, canActivate:[AuthGuard]},
 ];
 
 @NgModule({

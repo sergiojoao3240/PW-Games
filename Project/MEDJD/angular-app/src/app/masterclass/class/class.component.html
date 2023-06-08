@@ -18,24 +18,26 @@
                     </div>
                 </div>
             </nav>
-            <div class="content-texto">
-                <h1>Master Classes</h1>
-            </div>
-            <div class="box" >
-                <div class="content" *ngFor="let master of responseMasterClasses">
-                    <div class="image">
-                        <img src="{{master.image_dir}}" class="img-fluid">
+
+
+            <div *ngIf="request">
+                <div class="content-texto" >
+                    <h1>{{request.title}}</h1>
+                    <h4>Place: {{request.place}}</h4>
+                    <div class="image-fluid">
+                        <img src="{{request.image_dir}}">
                     </div>
-                    <div class="content-fluid">
-                        <h4 class="title"><a routerLink="/masterClass/{{master._id}}">{{master.title}}</a></h4>
-                        <p class="desc">{{master.description}}</p>
-                        <div class="linha">
-                            <p class="ano"><b>Year: {{master.year}}</b></p>
-                            <p class="data">{{master.date}}</p>
-                        </div>
+                    <a class="link" href="{{request.link}}">Website</a>
+                    <h4 class="date">On {{request.date}}</h4>
+                </div>
+                <div class="box-fluid">
+                    <h2>OverView</h2>
+                    <div class="descriptionZ">
+                        <p>{{request.description}}</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>

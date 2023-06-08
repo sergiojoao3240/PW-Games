@@ -18,9 +18,9 @@ export const getAllMaster = async(req: express.Request, res: express.Response) =
 export const getAMaster = async(req: express.Request, res: express.Response) => {
     try{
 
-        const { id } = req.params;
+        const { _id } = req.params;
 
-        const master = await getMasterById(id)
+        const master = await getMasterById(_id)
         return res.json(master);
 
     } catch(error){

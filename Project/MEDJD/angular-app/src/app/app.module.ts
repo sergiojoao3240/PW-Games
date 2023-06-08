@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { MasterclassComponent } from './masterclass/masterclass.component';
+import { ClassComponent } from './masterclass/class/class.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { MasterclassComponent } from './masterclass/masterclass.component';
     RegisterComponent,
     CurriculumComponent,
     MasterclassComponent,
+    ClassComponent,
 
   ],
   imports: [
