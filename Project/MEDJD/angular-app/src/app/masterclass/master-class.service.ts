@@ -25,4 +25,11 @@ export class MasterClassService {
     return this.http.post<ResponseMasterClass>(`${baseUrl}masterClass/new`, request)
   }
 
+  deleteMaster(_id: string): Observable<any>{
+    return this.http.delete<any>(`${baseUrl}masterClass/${_id}`)
+  }
+
+  updateMaster(_id: string, request: RequestMasterClass) : Observable<ResponseMasterClass>{
+    return this.http.patch<ResponseMasterClass>(`${baseUrl}masterClass/${_id}`, request)
+  }
 }

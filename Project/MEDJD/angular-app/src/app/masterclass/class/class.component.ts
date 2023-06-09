@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2, ElementRef } from '@angular/core';
 import { RequestMasterClass } from 'src/app/Models/masterclass.model';
 import { MasterClassService } from '../master-class.service';
 import { ActivatedRoute } from '@angular/router';
@@ -13,7 +13,7 @@ export class ClassComponent implements OnInit {
   id!: string | null;
   request!: RequestMasterClass;
 
-  constructor(private masterService: MasterClassService, private route: ActivatedRoute) { }
+  constructor(private masterService: MasterClassService, private route: ActivatedRoute, private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('_id');
@@ -31,6 +31,28 @@ export class ClassComponent implements OnInit {
         __v: res.__v
       }
     })
-}
+  }
 
+  showOverlay() {
+    const overlayElement = this.el.nativeElement.querySelector('#overlay');
+    this.renderer.setStyle(overlayElement, 'display', 'block');
+  }
+
+  hideOverlay() {
+    const overlayElement = this.el.nativeElement.querySelector('#overlay');
+    this.renderer.setStyle(overlayElement, 'display', 'none');
+  }
+
+  delete(){
+    this.masterService.deleteMaster(this.id!).subscribe(res=>{
+      alert("Removido com sucesso!")
+    })
+  }
+
+  save(){
+    this.masterService.updateMaster(this.id!, this.request).subscribe(res =>{
+      alert("Classe atualizada com sucesso!");
+      this.hideOverlay();
+    });
+  }
 }

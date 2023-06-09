@@ -32,9 +32,24 @@
                 </div>
                 <div class="box-fluid">
                     <h2>OverView</h2>
-                    <div class="descriptionZ">
+                    <div class="descriptionZ row">
                         <p>{{request.description}}</p>
+                        <div class="buttons">
+                            <button class="delete" (click)="delete()" routerLink="/masterClass">Eliminar</button>
+                            <button class="edit" (click)="showOverlay()">Editar</button>
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div class="overlay1">
+                    <input type="text" id="titleA" placeholder="Título" [(ngModel)]="request.title">
+                    <input type="text" id="descriptionA" placeholder="Descrição" [(ngModel)]="request.description">
+                    <input type="text" id="dateA" placeholder="Data" [(ngModel)]="request.date">
+                    <input type="text" id="placeA" placeholder="Local" [(ngModel)]="request.place">
+                    <button id="ChangeSubmit" (click)="save()">Adicionar</button>
+                    <button id="cancel" (click)="hideOverlay()">Cancelar</button>
                 </div>
             </div>
 

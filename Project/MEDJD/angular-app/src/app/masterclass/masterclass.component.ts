@@ -25,7 +25,7 @@ export class MasterclassComponent implements OnInit {
   }
 
 
-  constructor(private masterService:MasterClassService, private renderer: Renderer2, private el: ElementRef, private location: Location) { }
+  constructor(private masterService:MasterClassService, private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit(): void {
     this.masterService.getMasters().subscribe(
@@ -48,7 +48,7 @@ export class MasterclassComponent implements OnInit {
     this.masterService.createMaster(this.request).subscribe(res =>{
       this.responseMasterClass = res
     })
-    this.location.reload();
+    window.location.reload();
     this.hideOverlay();
   }
 
