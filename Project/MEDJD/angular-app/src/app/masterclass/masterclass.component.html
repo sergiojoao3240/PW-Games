@@ -21,6 +21,29 @@
             <div class="content-texto">
                 <h1>Master Classes</h1>
             </div>
+
+            <div class="add row">
+                <div class="col-md-9"></div>
+                <div class="col-md-3">
+                    <button class="newClass" id="AddBtn" (click)="showOverlay()">Add New Class</button>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div class="overlay1">
+                    <input type="text" id="titleA" placeholder="Título" [(ngModel)]="request.title">
+                    <input type="text" id="descriptionA" placeholder="Descrição" [(ngModel)]="request.description">
+                    <input type="text" id="image_dirA" placeholder="Link de Imagem" [(ngModel)]="request.image_dir">
+                    <input type="text" id="timeA" placeholder="Duração" [(ngModel)]="request.time">
+                    <input type="text" id="dateA" placeholder="Data" [(ngModel)]="request.date">
+                    <input type="text" id="placeA" placeholder="Local" [(ngModel)]="request.place">
+                    <input type="text" id="linkA" placeholder="Link" [(ngModel)]="request.link">
+                    <input type="text" id="yearA" placeholder="Ano" [(ngModel)]="request.year">
+                    <button id="ClassSubmit" (click)="save()" >Adicionar</button>
+                    <button id="cancel" (click)="hideOverlay()">Cancelar</button>
+                </div>
+            </div>
+
             <div class="box" >
                 <div class="content" *ngFor="let master of responseMasterClasses">
                     <div class="image">
@@ -38,4 +61,10 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="button">
+            <p (click)="topFunction()" id="myBtn" title="Go to top">Back to the Top</p>
+        </div>
+    </div>
 </div>
+

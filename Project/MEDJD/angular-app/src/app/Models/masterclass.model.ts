@@ -39,3 +39,15 @@ export interface RequestMasterClass {
   year: string
   __v: number
 }
+
+
+export interface RequestMasterClassC {
+  title: string
+  description: string
+  image_dir: string
+  time: string
+  date:string
+  place: string
+  link: string
+  year: string
+}
