@@ -152,61 +152,68 @@ a.list-group-item:nth-child(1) > span:nth-child(1){
     margin-left: 10%;
     margin-top: 5%;
   }
-  
+
   .text{
     padding: 3%;
     background-color: beige;
   }
-  
+
   .description{
     margin-top: 5%;
     font-size: 18px;
   }
-  
+
   .image{
     background-color: #E50040;
     display: flex;
     justify-content:center;
     padding: 1%;
   }
-  
+
   .g{
     margin-top: 5%;
   }
-  
+
   .c{
     margin-top: 3%;;
   }
-  
+
   .authors{
     margin-top: 2%;
     margin-bottom: 20%;
     font-size: 18px;
   }
-  
+
   .more{
     color: #E50040;
   }
-  
-  
+
   .covers, .button{
     float:left;
   }
-  
+
+  .cover{
+    max-width: 350px;
+    max-height: 200px;
+  }
+
   .button{
     width:10%;
     transform: rotate(-90deg);
-    margin-top:22%;
+    margin-top:20%;
   }
-  
+
   #myBtn {
     z-index: 99; /* Make sure it does not overlap */
     cursor: pointer; /* Add a mouse pointer on hover */
     font-size: 18px; /* Increase font size */
   }
-  
+
   #myBtn:hover {
     color: #E50040;
   }
-  
-  
+
+.gamesImg{
+  max-width: 250px;
+  max-height: 200px;
+}
