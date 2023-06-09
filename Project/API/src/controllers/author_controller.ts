@@ -1,7 +1,8 @@
 import express from 'express';
-
 import { getAuthorById, getAuthors, createAuthor, getAUthorByNUmber, deleteAuthorById } from '../db/author';
 
+
+// Função que obtém todos os autores existentes na base de dados
 export const getAllAuthor = async(req: express.Request, res: express.Response) => {
     try {
 
@@ -15,6 +16,7 @@ export const getAllAuthor = async(req: express.Request, res: express.Response) =
     }
 }
 
+// Função que retorna os dados de apenas um autor conforme o id passado
 export const getAAuthor = async(req: express.Request, res: express.Response) => {
     try{
 
@@ -29,12 +31,12 @@ export const getAAuthor = async(req: express.Request, res: express.Response) => 
     }
 }
 
+// Função que cria um novo autor
 export const create_Author= async (req: express.Request, res: express.Response) => {
     try {
 
         // Verificar se numero existe
         // Criar regex para o numero
-
         const {name, email} = req.body;
         if (!name || !email){
             return res.sendStatus(400);
@@ -64,6 +66,7 @@ export const create_Author= async (req: express.Request, res: express.Response) 
     }
 }
 
+// Função que elimina um autor
 export const deleteAuthor = async(req: express.Request, res: express.Response) => {
     try{
 
@@ -78,6 +81,7 @@ export const deleteAuthor = async(req: express.Request, res: express.Response) =
     }
 }
 
+// Função que atualiza os dados de um autor
 export const updateAuthor = async(req: express.Request, res: express.Response) => {
     try{
 

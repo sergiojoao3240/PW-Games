@@ -1,7 +1,8 @@
 import express from 'express';
-
 import { deleteUserById, getUserById, getUsers } from '../db/users';
 
+
+// Função que apresenta todos os utilizadores
 export const getAllUsers = async(req: express.Request, res: express.Response) => {
     try {
 
@@ -15,6 +16,7 @@ export const getAllUsers = async(req: express.Request, res: express.Response) =>
     }
 }
 
+// Função que elimina um utilizador da base de dados
 export const deleteUser = async(req: express.Request, res: express.Response) => {
     try{
 
@@ -29,6 +31,7 @@ export const deleteUser = async(req: express.Request, res: express.Response) => 
     }
 }
 
+// Função que atualiza os dados de um utilizador da base de dados
 export const updateUser = async(req: express.Request, res: express.Response) => {
     try{
 

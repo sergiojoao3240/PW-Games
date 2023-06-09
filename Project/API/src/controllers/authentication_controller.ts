@@ -4,6 +4,7 @@ import { createUser, getUserByEmail } from '../db/users';
 import { authentication, random } from '../helpers/index';
 
 
+// Função do Login -> verifica campos e verifica a existência da conta
 export const login = async (req: express.Request, res: express.Response) => {
     try{
 
@@ -39,6 +40,7 @@ export const login = async (req: express.Request, res: express.Response) => {
     }
 }
 
+// Função Register -> Cria uma nova conta
 export const register = async (req: express.Request, res: express.Response) => {
     try {
 

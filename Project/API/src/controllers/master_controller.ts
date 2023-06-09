@@ -1,7 +1,8 @@
 import express from 'express';
-
 import { deleteMasterById, getMasterById, getMasters, getMasterByTitle, createMaster } from '../db/master_class';
 
+
+// Função que apresenta todas as palestras da base de dados
 export const getAllMaster = async(req: express.Request, res: express.Response) => {
     try {
 
@@ -15,6 +16,7 @@ export const getAllMaster = async(req: express.Request, res: express.Response) =
     }
 }
 
+// Função que apresenta os dados de uma palestra apenas de acordo com o id
 export const getAMaster = async(req: express.Request, res: express.Response) => {
     try{
 
@@ -29,6 +31,7 @@ export const getAMaster = async(req: express.Request, res: express.Response) => 
     }
 }
 
+// Função que cria uma nova palestra na base de dados
 export const createMasterC= async (req: express.Request, res: express.Response) => {
     try {
 
@@ -62,6 +65,7 @@ export const createMasterC= async (req: express.Request, res: express.Response) 
     }
 }
 
+// Função que elimina uma palestra da base de dados de acordo com o id
 export const deleteMaster = async(req: express.Request, res: express.Response) => {
     try{
 
@@ -76,6 +80,7 @@ export const deleteMaster = async(req: express.Request, res: express.Response) =
     }
 }
 
+// Função que atualiza os dados de uma palestra da base de dados
 export const updateMaster= async(req: express.Request, res: express.Response) => {
     try{
 

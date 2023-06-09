@@ -1,5 +1,6 @@
 import mongoose, { mongo } from "mongoose";
 
+// Modelo de base de dados dos jogos
 const GameSchema = new mongoose.Schema({
     name: {type: String, required: true},
     authors: {type : Array, required: true},

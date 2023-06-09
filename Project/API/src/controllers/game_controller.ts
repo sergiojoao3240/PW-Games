@@ -1,8 +1,9 @@
 import express from 'express';
-
 import { getGameById, getGames, createGame, getGameByName, deleteGameById } from '../db/games';
 import { getAuthorByName } from '../db/author';
 
+
+// Função que apresenta todos os jogos da base de dados
 export const getAllGames = async(req: express.Request, res: express.Response) => {
     try {
 
@@ -16,6 +17,7 @@ export const getAllGames = async(req: express.Request, res: express.Response) =>
     }
 }
 
+// Função que apresenta os dados de um jogo de acordo com o id
 export const getAGame= async(req: express.Request, res: express.Response) => {
     try{
 
@@ -30,6 +32,7 @@ export const getAGame= async(req: express.Request, res: express.Response) => {
     }
 }
 
+// Função que cria um novo Jogo
 export const create_Game= async (req: express.Request, res: express.Response) => {
     try {
 
@@ -68,6 +71,7 @@ export const create_Game= async (req: express.Request, res: express.Response) =>
     }
 }
 
+// Função que elimina um jogo de acordo com o id
 export const deleteGame = async(req: express.Request, res: express.Response) => {
     try{
 
@@ -82,6 +86,7 @@ export const deleteGame = async(req: express.Request, res: express.Response) => 
     }
 }
 
+// Função que atualiza os dados de um jogo
 export const updateGame = async(req: express.Request, res: express.Response) => {
     try{
 

@@ -1,5 +1,6 @@
 import crypto from 'crypto';
 
+//Encriptação da palavra passe com sha256
 const SECRET ="SERGIO-API"
 
 export const random = () => crypto.randomBytes(128).toString('base64');

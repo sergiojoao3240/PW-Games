@@ -1,5 +1,6 @@
 import mongoose, { mongo } from "mongoose";
 
+// Modelo de base de dados das cadeiras
 const CurriculumSchema = new mongoose.Schema({
     name: {type: String, required: true},
     semester: {type : String, required: true},

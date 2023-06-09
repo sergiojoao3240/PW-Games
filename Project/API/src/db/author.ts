@@ -1,5 +1,6 @@
 import mongoose, { mongo } from "mongoose";
 
+// Modelo de base de dados dos autores
 const AuthorSchema = new mongoose.Schema({
     name: {type: String, required: true},
     email: {type : String, required: true},

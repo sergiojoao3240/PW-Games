@@ -1,5 +1,6 @@
 import mongoose, { mongo } from "mongoose";
 
+// Modelo de base de dados dos utilizadores
 const UserSchema = new mongoose.Schema({
     user_id: {type: String, required: true},
     email: {type: String, required: true},

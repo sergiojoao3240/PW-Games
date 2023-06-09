@@ -1,5 +1,6 @@
 import mongoose, { mongo } from "mongoose";
 
+// Modelo de base de dados das palestras
 const MasterSchema = new mongoose.Schema({
     title: {type: String, required: true},
     description: {type : String, required: true},

@@ -1,7 +1,8 @@
 import express from 'express';
-
 import { deleteCurById, getCurById, getCurriculum, getCurByName, createCur } from '../db/curriculum';
 
+
+// Função que apresenta todas as cadeiras do curso de forma ordenada
 export const getAllCurriculum = async(req: express.Request, res: express.Response) => {
     try {
 
@@ -34,6 +35,7 @@ export const getAllCurriculum = async(req: express.Request, res: express.Respons
     }
 }
 
+// Função que apresenta os dados de uma cadeira de acordo com o id passado
 export const getACurriculum = async(req: express.Request, res: express.Response) => {
     try{
 
@@ -48,6 +50,7 @@ export const getACurriculum = async(req: express.Request, res: express.Response)
     }
 }
 
+//Função que cria uma nova cadeira
 export const createCurriculum = async (req: express.Request, res: express.Response) => {
     try {
 
@@ -77,6 +80,7 @@ export const createCurriculum = async (req: express.Request, res: express.Respon
     }
 }
 
+// Função que elimina uma cadeira do curso
 export const deleteCurriculum = async(req: express.Request, res: express.Response) => {
     try{
 
@@ -91,6 +95,7 @@ export const deleteCurriculum = async(req: express.Request, res: express.Respons
     }
 }
 
+//Função atualiza os dados de uma cadeira do curso
 export const updateCurriculum = async(req: express.Request, res: express.Response) => {
     try{
 
