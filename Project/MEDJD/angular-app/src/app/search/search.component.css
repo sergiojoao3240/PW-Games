@@ -48,11 +48,13 @@ h1{
 }
 
 .game-fluid{
-    display: grid;
+    display: flex;
     justify-content:center;
+    flex-direction: column;
     margin-top: 2%;
     padding: 2%;
     margin-left: 20px;
+    width: 250px;
 }
 
 img{
@@ -122,15 +124,18 @@ a.title{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #ffffffa5;
     padding: 30px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
   }
 
   #searchSubmit{
     background-color: #E50040;
     color: #fff;
     border-radius: 10px;
+    height: 40px;
   }
 
   #searchBtn{
@@ -138,52 +143,13 @@ a.title{
     background-color: #ffffff;
   }
 
-  .newGame{
-    color: #E50040;
-    background-color: transparent;
-    border: transparent;
-    font-size: 18px;
-    margin-left: 30%;
-  }
-
-  .overlayAdd {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none; /* Ocultar por padrão */
-  }
-  .overlayAdd-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 5px;
-    display: grid;
-  }
-
-  #AddSubmit{
-    background-color: #E50040;
-    color: #fff;
-    border-radius: 10px;
-  }
-
   input{
-    margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
     width: 350px;
     padding: 5px;
   }
 
-  #GameSubmit{
-    margin-top: 10px;
-    border-radius: 10px;
-    background-color: #E50040;
-    color: #ffffff;
-    padding: 5px;
+  .soma{
+    font-size: 20px;
   }
